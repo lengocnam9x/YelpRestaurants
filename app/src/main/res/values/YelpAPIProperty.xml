@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appID">uWUJ0_3moyYtDtTalfNviQ</string>
+    <string name="appSecret">jrWDO0zrN5NaxIghG9TgirJIhGCNvOA1jeOsUVtXbAD9lKIT2q6vzDAIQev5WWJu</string>
+    <integer name="maxSearchRadius">40000</integer>
+</resources>
