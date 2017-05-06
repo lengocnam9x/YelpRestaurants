@@ -2,8 +2,6 @@ package com.example.timanhsaokim.yelprestaurants.connection;
 
 import com.example.timanhsaokim.yelprestaurants.SearchAsyncTask;
 import com.example.timanhsaokim.yelprestaurants.model.AccessToken;
-import com.example.timanhsaokim.yelprestaurants.model.SearchRequest;
-import com.example.timanhsaokim.yelprestaurants.model.SearchResponse;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

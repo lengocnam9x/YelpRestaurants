@@ -1,4 +1,4 @@
-package com.example.timanhsaokim.yelprestaurants.model;
+package com.example.timanhsaokim.yelprestaurants.model.search;
 
 import com.example.timanhsaokim.yelprestaurants.KeyAndValueGenerator;
 

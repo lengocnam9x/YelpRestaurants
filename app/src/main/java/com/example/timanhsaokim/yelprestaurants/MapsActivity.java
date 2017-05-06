@@ -1,31 +1,16 @@
 package com.example.timanhsaokim.yelprestaurants;
 
-import android.app.IntentService;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.graphics.Color;
-import android.location.Location;
-import android.location.LocationManager;
 import android.os.IBinder;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Toast;
 
-import com.example.timanhsaokim.yelprestaurants.model.SearchRequest;
-import com.example.timanhsaokim.yelprestaurants.model.SearchResponse;
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.CircleOptions;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.VisibleRegion;
-
-import java.math.BigDecimal;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 

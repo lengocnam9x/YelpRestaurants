@@ -3,13 +3,7 @@ package com.example.timanhsaokim.yelprestaurants;
 import android.os.AsyncTask;
 import android.os.Process;
 
-import com.example.timanhsaokim.yelprestaurants.connection.ConnectionFactory;
-import com.example.timanhsaokim.yelprestaurants.connection.IYelpAPIManager;
-import com.example.timanhsaokim.yelprestaurants.model.SearchRequest;
-import com.example.timanhsaokim.yelprestaurants.model.SearchResponse;
-
 import java.io.IOException;
-import java.math.BigDecimal;
 
 import retrofit2.Call;
 

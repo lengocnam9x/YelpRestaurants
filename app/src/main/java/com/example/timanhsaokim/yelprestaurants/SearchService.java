@@ -9,8 +9,10 @@ import android.widget.Toast;
 
 import com.example.timanhsaokim.yelprestaurants.connection.ConnectionFactory;
 import com.example.timanhsaokim.yelprestaurants.connection.IYelpAPIManager;
-import com.example.timanhsaokim.yelprestaurants.model.SearchRequest;
-import com.example.timanhsaokim.yelprestaurants.model.SearchResponse;
+import com.example.timanhsaokim.yelprestaurants.model.reviews.ReviewsRequest;
+import com.example.timanhsaokim.yelprestaurants.model.reviews.ReviewsResponse;
+import com.example.timanhsaokim.yelprestaurants.model.search.SearchRequest;
+import com.example.timanhsaokim.yelprestaurants.model.search.SearchResponse;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
@@ -71,6 +73,20 @@ public class SearchService extends Service {
         SearchService getService() {
             return SearchService.this;
         }
+    }
+
+    public ReviewsResponse getReviews(ReviewsRequest reviewsRequest){
+        ReviewsResponse response = new ReviewsResponse();
+        Call<ReviewsResponse> call = client.getBusinessReviews(reviewsRequest.getId(), reviewsRequest.getLocale());
+        SearchAsyncTask asyncTask = new SearchAsyncTask();
+        try {
+            response = (ReviewsResponse) asyncTask.execute(call).get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return response;
     }
 
     @Override

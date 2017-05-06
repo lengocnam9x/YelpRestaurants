@@ -1,7 +1,6 @@
-package com.example.timanhsaokim.yelprestaurants.model.searchbusinesses;
+package com.example.timanhsaokim.yelprestaurants.model.search;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonSetter;
 
 import java.math.BigDecimal;
 

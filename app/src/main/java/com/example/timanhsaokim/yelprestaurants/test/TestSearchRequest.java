@@ -1,6 +1,6 @@
 package com.example.timanhsaokim.yelprestaurants.test;
 
-import com.example.timanhsaokim.yelprestaurants.model.SearchRequest;
+import com.example.timanhsaokim.yelprestaurants.model.search.SearchRequest;
 
 import java.math.BigDecimal;
 
